@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sobre', 'PagesController@sobre');
-
-Route::get('/amigos', 'PagesController@amigos');
+Route::get('/cadastro', 'CowController@cadastroVacas');
+Route::get('/lista', 'CowController@listaVacas');
+Route::post('/formCadastro', 'CowController@cadastraVacas');
