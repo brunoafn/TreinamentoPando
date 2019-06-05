@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/cadastro', 'CowController@cadastroVacas');
+
 Route::get('/lista', 'CowController@listaVacas');
+
 Route::post('/formCadastro', 'CowController@cadastraVacas');
+
+Route::get('cow/{id}', 'CowController@show'); //rota para a listagem de vacas

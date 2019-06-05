@@ -4,3 +4,4 @@
     Route::get('/amigos', 'PagesController@amigos');
 
     Route::get('/sobre', 'PagesController@sobre');
+    
