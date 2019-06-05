@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/cadastro', 'CowController@cadastroVacas');
 
-Route::get('/lista', 'CowController@listaVacas');
+Route::get('/', 'CowController@list');
 
 Route::post('/formCadastro', 'CowController@cadastraVacas');
 

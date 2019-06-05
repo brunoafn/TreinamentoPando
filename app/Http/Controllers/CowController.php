@@ -23,27 +23,9 @@ class CowController extends Controller
 
     public function list()
     {
-        $cow = Cow::all();
-        return view('listaVacas', compact('cow'));
+        $cows = Cow::all();
+        return view('listaVacas', compact('cows'));
     }
-
-    /*
-    public function store(Request $request)
-    {
-        // Validate the request...
-
-        $cow = new Cow;
-
-        $cow->nome = $request->name;
-        $cow->fone = $request->fone;
-        $cow->email = $request->email;
-
-        $cow->save();
-    
-        $cow = Cow::all();
-        return view('listaVacas', compact('cow'));
-    }
-    */
 
     public function cadastroVacas(){
 
@@ -63,8 +45,8 @@ class CowController extends Controller
 
         $cow->save();   
     
-        $cow = Cow::all();
-        return view('listaVacas', compact('cow'));
+        $cows = Cow::all();
+        return view('listaVacas', compact('cows'));
     }
 
 }
