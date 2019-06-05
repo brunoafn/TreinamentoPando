@@ -20,3 +20,6 @@ Route::get('/', 'CowController@list');
 Route::post('/formCadastro', 'CowController@cadastraVacas');
 
 Route::get('cow/{id}', 'CowController@show'); //rota para a listagem de vacas
+
+Route::get('/deletar/{id}', 'CowController@deletarVaca');
+

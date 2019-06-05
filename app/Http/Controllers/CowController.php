@@ -49,4 +49,10 @@ class CowController extends Controller
         return view('listaVacas', compact('cows'));
     }
 
+    public function deletarVaca($id){
+        $cow = Cow::find($id);
+        $cow->delete();
+        $cows = Cow::all();
+        return view('listaVacas', compact('cows'));
+    }
 }

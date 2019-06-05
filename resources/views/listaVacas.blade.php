@@ -5,6 +5,7 @@
             <th> name</th>
             <th> fone</th>
             <th> email</th>
+            <th> action</th>   
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,7 @@
             <td>{{ $vaca->nome}}</td>
             <td>{{ $vaca->fone}}</td>
             <td>{{ $vaca->email}}</td>  
+            <td><a href="/deletar/{{$vaca->id}}">deletar</a></td>
         </tr>    
         @endforeach
     <tbody>
